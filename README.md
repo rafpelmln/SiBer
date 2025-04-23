@@ -1,4 +1,6 @@
-git clone (link nya)
--composer install/update
--cp .env.example .env
--php artisan key:generate
+<ol>
+    <li>git clone (link nya)</li>
+    <li>composer install/update</li>
+    <li>cp .env.example .env</li>
+    <li>php artisan key:generate</li>
+</ol>
