@@ -17,10 +17,24 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'nama_lengkap',
+        'username',
+        'nomor_wa',
         'email',
         'password',
+        'role',
+        'tahun_ajaran_id',
     ];
+
+    public function tahunAjaran()
+    {
+        return $this->belongsTo(TahunAjaran::class);
+    }
+
+    public function pengaduans()
+    {
+        return $this->hasMany(Pengaduan::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
